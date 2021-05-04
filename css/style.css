@@ -4,6 +4,12 @@ display
 position
 padding - внутренний отступ
 margin - внешний отступ
+border
+background
+color
+БЭМ
+FLEX
+GRID
 
 npm i serve
 
@@ -22,6 +28,17 @@ npm i serve
 5. Почитать медиавыражения
 
 6. Почитать про ARIA
+
+
+===============
+7. Positions: absolute(left, right, top, bottom), relative, fixed, sticky
+
+8. выровнять размер блоков
+
+9. сделать на Flex что бы пружинило
+
+10. поправить медиа выражения что бы не уезжал логотип
+
 */
 
 .container-content{
@@ -29,16 +46,14 @@ npm i serve
     flex-direction: row;
     justify-content:center;
     align-items: center; 
+    
 }
 
-.menu-open{
-    background: none;
-    border: none;
-    padding: 5px;
-    margin-left: 100px;
-    display: none;
-}
+
 /* середина */
+ul.menu {
+    display: flex;
+}
 ul.menu li{
     display: inline-flex;
 }
@@ -74,6 +89,7 @@ ul.menu li{
         display: block; 
     }
     
+    
 }
 
 /* медиавыражения */
@@ -82,15 +98,16 @@ ul.menu li{
     ul.menu li{
         display: none;        
     }
-    .menu-open{
-        display: block;
-    }
-    
-}
-
-@media (max-width:500px) {
-    .nav-bar{
+    .search-toch{
         display: none;
     }
+    .like-bar{
+        display: none;
+    }
+    .menu-bar{
+        padding: 5px 0px 0px 0px;
+    }
     
+
 }
+
