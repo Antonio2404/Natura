@@ -41,24 +41,25 @@ npm i serve
 
 */
 
-.container-content{
+header{
     display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center; 
-    
+    justify-content: space-between;
 }
 
-
-/* середина */
-ul.menu {
+.header_section{
     display: flex;
+    align-items: center;
 }
-ul.menu li{
-    display: inline-flex;
+.headerButton:hover{
+    background-color: rgb(233, 233, 233);
+    border-radius: 3px;
 }
 
-.menu li a{
+.headerlogo{
+    margin: auto 30px;
+}
+
+a{
     text-decoration: none;
     color:#2b2b2b;
     text-transform: uppercase;
@@ -66,43 +67,8 @@ ul.menu li{
     font-family: Circe;
     padding: 5px;
     margin: auto 30px;
-    
 }
 
-.nav{
-    display: inline-flex;
 
-}
 
-.search-toch{
-    margin: auto 15px;
-}
-.like-bar{
-    margin: auto 15px;
-}
-.menu-bar{
-    margin: auto 15px;
-}
-
-@media (max-width:1280px) {
-    ul.menu li{
-        display: block; 
-    }
-}
-
-/* медиавыражения */
-
-@media (max-width:800px) {
-    ul.menu li{
-        display: none;        
-    }
-    .search-toch{
-        display: none;
-    }
-    .like-bar{
-        display: none;
-    }
-    
-
-}
 
