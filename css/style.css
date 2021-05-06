@@ -50,10 +50,6 @@ header{
     display: flex;
     align-items: center;
 }
-.headerButton:hover{
-    background-color: rgb(233, 233, 233);
-    border-radius: 3px;
-}
 
 .headerlogo{
     margin: auto 30px;
@@ -78,11 +74,44 @@ header{
     margin: auto 20px;
 }
 
+.showMenuButton{
+    display: none;
+    
+}
 
+.showMenuSearching{
+    display: none;
+}
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1440px) {
+    
+    
+}
+
+@media screen and (max-width: 996px) {
     .headerNav a{
-        
+        font-size: 0;
+    }
+    
+}
+
+@media screen and (max-width: 625px) {
+    
+    .headerNav a{
+        margin: auto 10px;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+
+    header{
+        justify-content: center;
+    }
+    .headerNav{
+
+        display: none;
+    
     }
     
 }
