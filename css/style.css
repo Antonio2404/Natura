@@ -94,11 +94,85 @@ footer{
    
 }
 
+.footerCompany{
+    display: flex;
+    height:20vh ;
+    /* list-style-type: none; */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.footerCompany ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footerCompany ul li a{
+    text-decoration: none;
+}
+
+.footerHelp{
+    display: flex;
+    height:20vh ;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.footerHelp ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footerHelp ul li a{
+    text-decoration: none;
+}
+
+.footerCatalog{
+    display: flex;
+    height:20vh ;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.footerCatalog ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    
+    padding: 0px;
+    margin: 0px;
+    flex-wrap: wrap;
+    order: 6;
+}
+
+.footerCatalog ul li a{
+    text-decoration: none;
+    column-count: 2;
+}
+
 .footerTop{
     display: flex;
     justify-content: space-between;
 
 }
+
+
 .footerContact{
     margin-right: 15px;
 }
@@ -114,7 +188,6 @@ footer{
     font-family: Circe;
     font-weight: normal;
     color:#2b2b2b;
-    text-transform: capitalize;
 }
 
 .phone{
