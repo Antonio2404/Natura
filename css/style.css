@@ -45,6 +45,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    flex: 1 0 auto;
 
 }
 
@@ -87,24 +88,76 @@ header{
 
 /* ---------------- */
 
+main{
+    flex: 1 0 auto;
+    display: flex ;
+    flex-direction: column;
+    position: relative;
+    align-self: center;
+    margin-top: 10px;
+}
+.l-container{
+    flex: 1 0 auto;
+    display: flex;
+}
+
+.l-nav{
+    flex: none;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 30px;
+
+}
+
+.all-goods{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: Circle;
+    font-style: normal;
+}
+
+.all-fabrics{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.l-nav label{
+    font-family: Circe;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.l-nav input{
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+/* ---------------- */
+
 footer{
     display: flex;
     flex-direction: column;
-    /* margin-top: 20px; */
+    flex: 1 0 auto;
    
+}
+
+.footerLogo{
+    margin-top: 0px;
+    margin-left: 30px;
 }
 
 .footerCompany{
     display: flex;
-    height:20vh ;
-    /* list-style-type: none; */
     flex-direction: column;
-    flex-wrap: nowrap;
     font-size: 18px;
-    margin: 0;
-    padding: 0;
-    
+    height:  ;
 }
+
 
 .footerCompany ul{
     display: flex;
@@ -112,6 +165,7 @@ footer{
     list-style-type: none;
     padding: 0px;
     margin: 0px;
+    
 }
 
 .footerCompany ul li a{
@@ -120,7 +174,6 @@ footer{
 
 .footerHelp{
     display: flex;
-    height:20vh ;
     flex-direction: column;
     flex-wrap: nowrap;
     font-size: 18px;
@@ -142,7 +195,7 @@ footer{
 
 .footerCatalog{
     display: flex;
-    height:20vh ;
+ 
     flex-direction: column;
     flex-wrap: nowrap;
     font-size: 18px;
@@ -157,18 +210,18 @@ footer{
     
     padding: 0px;
     margin: 0px;
-    flex-wrap: wrap;
-    order: 6;
+ 
 }
 
 .footerCatalog ul li a{
     text-decoration: none;
-    column-count: 2;
 }
 
 .footerTop{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+  
 
 }
 
@@ -180,6 +233,7 @@ footer{
 .footerPosition{
     font-weight: bold;
     font-size: 20px;
+    margin-top: 0px;
     margin-bottom: 5px;
 }
 
@@ -198,8 +252,17 @@ footer{
     margin-bottom: 15px;
 }
 
+.hr-footTop{
+    margin: 50px 15px 30px 25px;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 1px solid #333;
+
+}
+
 .hr-dashed{
-    margin: 50px 15px 0px 25px;
+    margin: 30px 15px 0px 25px;
 	padding: 0;
 	height: 0;
 	border: none;
