@@ -46,21 +46,31 @@ header{
     justify-content: space-between;
     margin-bottom: 10px;
     flex: 1 0 auto;
+    margin-right: 30px;
+    
 
 }
 
 .header_section{
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    
+    
 }
 
 .headerlogo{
     margin: auto 30px;
 }
+.headerButton{
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+.headerButton:hover{
+    background: rgb(228, 228, 228);
+}
+
 
 .headerNav a{
-    margin: auto 30px;
     
     text-decoration: none;
     color:#2b2b2b;
@@ -71,34 +81,47 @@ header{
 }
 
 .headerNavLeft{
-    margin-left: auto 30px;
+    display: flex;
+    align-items: center;
+
+
 }
 
 .headerNavLeft a{
-    margin: auto 20px;
+
+    padding: 15px 15px 15px 15px;
 }
 
 .search{
     display: flex;
-    height:25px ;
-    border-radius: 20px;
-    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    
+}
+.likeButton{
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+}
+
+.menuButton{
+    display: flex;
+    position: relative;
+    border-radius: 10px;
 }
 
 .searchBtn{
-    transition: 0.4s;
-}
-
-.searchBtn > i{
-    font-size: 30px;
+    transition: 0.5s;
 }
 
 .search:hover > .searchText {
-    width: 150px;
-    padding: 0 3px;
+    width: 200px;
+    padding: 0 15px;
+    
 }
 
 .searchText {
+    
     border: none;
     background: none;
     outline: none;
@@ -106,15 +129,24 @@ header{
     color: #2b2b2b;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    transition: 0.4s;
+    transition: 0.5s;
     line-height: 40px;
     width: 0;
-    font-weight:;
 }
 
 .search:hover{
     background: rgb(228, 228, 228);
-    padding: 10px;
+    
+}
+
+.likeButton:hover{
+    background: rgb(228, 228, 228);
+    padding: 20 20 20 20;
+}
+
+.menuButton:hover{
+    background: rgb(228, 228, 228);
+    padding: 20 20 20 20;
 }
 
 
@@ -156,10 +188,6 @@ main{
     margin-bottom: 5px;
     font-size: 16px;
     font-weight: bold;
-}
-
-input[type=checkbox]{
-    
 }
 
 .l-nav label{
