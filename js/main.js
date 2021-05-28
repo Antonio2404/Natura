@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const showMenuSearching = document.querySelector('.showMenuSearching');
 
     searchingButton.addEventListener('click', function () {
-        showMenuSearching.classList.toggle('show-menu');
+        showMenuSearching.classList.toggle('showMenuSearching');
     })
 });
