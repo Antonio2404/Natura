@@ -80,6 +80,10 @@ header{
     padding: 5px;
 }
 
+.headerNav img{
+    width: 18px;
+}
+
 .headerNavLeft{
     display: flex;
     align-items: center;
@@ -161,34 +165,49 @@ main{
     align-self: center;
     margin-top: 10px;
 }
+/* ---------------- */
 .l-container{
     flex: 1 0 auto;
     display: flex;
 }
 
 .l-nav{
-    flex: none;
-    min-width: 0;
     display: flex;
+    flex: none;
     flex-direction: column;
+    min-width: 0;
     width: 300px;
     margin-left: 30px;
-
 }
 
 .all-goods{
-    margin-top: 5px;
+    /* margin-top: 5px; */
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
 }
 
 .all-fabrics{
+    display: flex;
+    flex-direction: column;
     margin-top: 25px;
     margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: normal;
 }
+
+.all-fabrics span{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom:15px; 
+}
+
+/* .all-fabrics label{
+    display: inline block;
+    margin-bottom: 12px;
+} */
+
+
 
 .l-nav label{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -196,10 +215,55 @@ main{
     line-height: 24px;
 }
 
-.l-nav input{
+/* .l-nav input{
     margin-left: 0px;
-    margin-right: 5px;
+    margin-right: 14px;
+} */
+
+
+
+/* .check__input{
+    appearance: none;
+    position: absolute;
+    
+
+} */
+
+.all-fabrics input {
+    
+    appearance:initial;
 }
+
+.all-fabrics label{
+    padding-left:20px;
+}
+
+/* .all-fabrics label::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../css/img/off.svg);
+    vertical-align: -1px;
+} */
+
+.check .check_box{
+    position: absolute;
+    margin-left: -1.4em;
+    width: 16px;
+    height: 16px;
+    vertical-align: -10px;
+    background-image: url(../css/img/off.svg);
+    
+}
+
+/* состояния checkbox */
+.check__input:checked + .check_box{
+    background-image: url(../css/img/on.svg);
+}
+
+
+/* ---------------- */
 
 .panel_content a{
     text-decoration: none;
@@ -430,8 +494,15 @@ footer{
 
 }
 
+@media screen and (max-width: 1200px) {
+    .headerButton img{
+        width: 25px;
+        
+    }
 
-@media screen and (max-width: 1440px) {
+    .headerNav a{
+        font-size: 0;
+    }
     
     
 }
