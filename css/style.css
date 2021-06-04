@@ -64,6 +64,7 @@ header{
 .headerButton{
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
+    transition-duration: 0.5s;
 }
 .headerButton:hover{
     background: rgb(228, 228, 228);
@@ -100,18 +101,21 @@ header{
     display: flex;
     position: relative;
     border-radius: 10px;
+    transition-duration: 0.5s;
     
 }
 .likeButton{
     display: flex;
     position: relative;
     border-radius: 10px;
+    transition-duration: 0.5s;
 }
 
 .menuButton{
     display: flex;
     position: relative;
     border-radius: 10px;
+    transition-duration: 0.5s;
 }
 
 .searchBtn{
@@ -202,32 +206,11 @@ main{
     margin-bottom:15px; 
 }
 
-/* .all-fabrics label{
-    display: inline block;
-    margin-bottom: 12px;
-} */
-
-
-
 .l-nav label{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 24px;
 }
-
-/* .l-nav input{
-    margin-left: 0px;
-    margin-right: 14px;
-} */
-
-
-
-/* .check__input{
-    appearance: none;
-    position: absolute;
-    
-
-} */
 
 .all-fabrics input {
     
@@ -235,31 +218,84 @@ main{
 }
 
 .all-fabrics label{
-    padding-left:20px;
+    padding-left:12px;
 }
-
-/* .all-fabrics label::before{
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url(../css/img/off.svg);
-    vertical-align: -1px;
-} */
 
 .check .check_box{
     position: absolute;
-    margin-left: -1.4em;
+    margin-left: -1.7em;
     width: 16px;
     height: 16px;
     vertical-align: -10px;
     background-image: url(../css/img/off.svg);
-    
+    transform: translate(0px, 4px); 
+    transition-duration: 0.1s;
+}
+
+.check__color .check_box_white{
+    position: absolute;
+    margin-left: -1.7em;
+    width: 16px;
+    height: 16px;
+    vertical-align: -10px;
+    transform: translate(0px, 3px);
+    border: 1px solid #D8D8D8;
+    border-radius: 50%;   
+}
+
+.check__color .check_box_peachcolor{
+    position: absolute;
+    margin-left: -1.7em;
+    width: 16px;
+    height: 16px;
+    vertical-align: -10px;
+    transform: translate(1px, 4px);
+    background-color: #ECBBAF ;
+    border-radius: 50%; 
+    transition-delay: 0.1s;
+
+}
+
+.check__color .check_box_silver{
+    position: absolute;
+    margin-left: -1.7em;
+    width: 16px;
+    height: 16px;
+    vertical-align: -10px;
+    transform: translate(1px, 4px);
+    background: linear-gradient(137.72deg, #ECF0F5 15.5%, #CCD6E6 89.81%);
+    border-radius: 50%;  
+}
+
+.check__color .check_box_yellow{
+    position: absolute;
+    margin-left: -1.7em;
+    width: 16px;
+    height: 16px;
+    vertical-align: -10px;
+    transform: translate(1px, 4px);
+    background-color: #FDBD4E;
+    border-radius: 50%;   
+}
+
+.check__color .check_box_whitegrade{
+    position: absolute;
+    margin-left: -1.7em;
+    width: 16px;
+    height: 16px;
+    vertical-align: -10px;
+    transform: translate(1px, 4px);
+    background:radial-gradient(75.91% 75.91% at 64% 75.91%, rgba(255, 255, 255, 0.46) 0%, #EAEEF4 100%);
+    border-radius: 50%;   
 }
 
 /* состояния checkbox */
 .check__input:checked + .check_box{
     background-image: url(../css/img/on.svg);
+}
+
+.check__input:checked + .check_box_peachcolor{ 
+    
 }
 
 
@@ -298,11 +334,13 @@ main{
     border: 1px solid black;
     padding: 10px 20px;
     margin-right: 10px;
+    transition-duration: 0.3s;
 }
 .pageContent_button button:hover{
     background-color: black;
     color: white;
 }
+
 
 
 /* ---------------- */
@@ -327,25 +365,47 @@ main{
 .pageContent_panel{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: row;
     margin-right: 35px;
-    margin-top:30px ;
+    margin-top: 20px ;
+    padding-right: 10px;
 }
 
-.view_row{
-    margin-top: 10px;
-    margin-bottom: 20;
-    margin-left: 0px;
-    margin-right:0px ;
-    padding-top:10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right:10px ;
-    display:  block;
-    width: 300px;
-    
+.views_row{
+padding-right: 15px;
+padding-bottom: 30px;
 }
+.views_row img{
+    width: 330px;
+}
+
+.views_row_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.views_row input{
+    appearance: none;
+}
+
+.views_row .check_like{
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    background-image: url(../css/img/check_like_off.svg);
+    border-radius: 50%;
+    transform: translate(-40px, 10px); 
+    transition-duration: 0.1s;
+}
+
+.views_row .check__input:checked + .check_box_like{
+    background-image: url(../css/img/check_like_on.svg);
+}
+
+
 
 
 /* ---------------- */
