@@ -229,64 +229,57 @@ main{
     vertical-align: -10px;
     background-image: url(../css/img/off.svg);
     transform: translate(0px, 4px); 
-    transition-duration: 0.1s;
 }
 
 .check__color .check_box_white{
     position: absolute;
     margin-left: -1.7em;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     vertical-align: -10px;
     transform: translate(0px, 3px);
-    border: 1px solid #D8D8D8;
-    border-radius: 50%;   
+    background-image: url(../css/img/white.svg); 
 }
 
 .check__color .check_box_peachcolor{
     position: absolute;
     margin-left: -1.7em;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     vertical-align: -10px;
-    transform: translate(1px, 4px);
-    background-color: #ECBBAF ;
-    border-radius: 50%; 
-    transition-delay: 0.1s;
+    transform: translate(0px, 3px);
+    background-image: url(../css/img/peachcolor.svg);
 
 }
 
 .check__color .check_box_silver{
     position: absolute;
     margin-left: -1.7em;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     vertical-align: -10px;
-    transform: translate(1px, 4px);
-    background: linear-gradient(137.72deg, #ECF0F5 15.5%, #CCD6E6 89.81%);
-    border-radius: 50%;  
+    transform: translate(0px, 3px);
+    background-image: url(../css/img/silver.svg);
 }
 
 .check__color .check_box_yellow{
     position: absolute;
     margin-left: -1.7em;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     vertical-align: -10px;
-    transform: translate(1px, 4px);
-    background-color: #FDBD4E;
-    border-radius: 50%;   
+    transform: translate(0px, 3px);
+    background-image: url(../css/img/yellow.svg);
 }
 
 .check__color .check_box_whitegrade{
     position: absolute;
     margin-left: -1.7em;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     vertical-align: -10px;
-    transform: translate(1px, 4px);
-    background:radial-gradient(75.91% 75.91% at 64% 75.91%, rgba(255, 255, 255, 0.46) 0%, #EAEEF4 100%);
-    border-radius: 50%;   
+    transform: translate(0px, 3px);
+    background-image: url(../css/img/whitegrade.svg);   
 }
 
 /* состояния checkbox */
@@ -294,8 +287,24 @@ main{
     background-image: url(../css/img/on.svg);
 }
 
-.check__input:checked + .check_box_peachcolor{ 
-    
+.check__input:checked + .check_box_peachcolor{
+    position: absolute;
+    margin-left: -1.7em;
+    width: 22px;
+    height: 22px;
+    vertical-align: -10px;
+    transform: translate(-2px, 1px);
+    background-image: url(../css/img/peachcolor_on.svg);
+}
+
+.check__input:checked + .check_box_whitegrade{
+    position: absolute;
+    margin-left: -1.7em;
+    width: 22px;
+    height: 22px;
+    vertical-align: -10px;
+    transform: translate(-2px, 1px);
+    background-image: url(../css/img/whitegrade_on.svg);
 }
 
 
@@ -401,7 +410,7 @@ padding-bottom: 30px;
     transition-duration: 0.1s;
 }
 
-.views_row .check__input:checked + .check_box_like{
+.check__input:checked + .check_box_like{
     background-image: url(../css/img/check_like_on.svg);
 }
 
