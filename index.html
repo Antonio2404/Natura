@@ -10,71 +10,66 @@
     <link href = "https://fonts.googleapis.com/css2? family = Inter: wght @ 100 & display = swap" rel = "таблица стилей">
 </head>
 <body>
-    <div class="content-container">
-        <header>
-            <div class="header_item headerlogo">
-                <img src="img/header/logo.svg" alt>
+    <script src="js/main.js"></script>
+
+        <header class="header">
+            <div class="header__logo">
+                <img class="logo__img" src="img/header/logo.svg" alt>
             </div>
-            <div class="header_section  headerNav">
-                <div class="headerButton">
+
+
+            <form class="header__section">
+                <div class="button__item">
                     <a href="#">
                         <img src="img/header/living_room.svg" alt>
                         гостиная
                     </a>
                 </div>
-                <div class="headerButton">
+                <div class="button__item">
                     <a href="#">
                         <img src="img/header/kitchen.svg" alt>
                         кухня
                     </a>
                 </div>
-                <div class="headerButton">
+                <div class="button__item">
                     <a href="#">
                         <img src="img/header/playroom.svg" alt>
                         детская
                     </a>
                 </div>
-                <div class="headerButton">
+                <div class="button__item">
                     <a href="#">
                         <img src="img/header/bathroom.svg" alt>
                         ванная
                     </a>
                 </div>
-                <div class="headerButton">
+                <div class="button__item">
                     <a href="#">
                         <img src="img/header/bedroom.svg" alt>
                         спальня
                     </a>
                 </div>
-            </div>
-            <div class="headerNavLeft">
-                <!-- кнопка поиска -->
-                <div class="header_item  search">
-                    <input type="text" class="searchText" placeholder="Поиск...">
-                     <a class="searchBtn" >
+            </form>
+
+            <nav class="header__nav">          
+                <form class="nav__search">
+                    <input class="search-text" type="text" placeholder="Поиск...">
+                     <a class="button" >
                         <img src="img/header/searching.svg" alt>
                      </a>
-                </div>
-                <div class="header_item likeButton">
+                </form>
+                <form class="nav__like">
                     <a href="#">
                         <img src="img/header/like.svg" alt>
                     </a>
-                </div>
-                <!-- кнопка меню -->
-                <div class="header_item menuButton">
+                </form>
+                <form class="nav__menu">
                     <a href="#">
                         <img src="img/header/menu.svg" alt>
                     </a>
-                </div>
-            </div>
-            <!-- блок поиска -->
-            <!-- <div class="showMenuSearching">
-
-            </div> -->
-            <!-- блок меню -->
-            <!-- <div class="showMenuButton">
-                
-            </div> -->
+                </form>
+            </nav>
+            
         </header>
         <main>
             <div class="l-container">
@@ -556,7 +551,5 @@
                 
             </div>           
         </footer>
-    </div>
-    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,45 +1,3 @@
-/* width
-height
-display
-position
-padding - внутренний отступ
-margin - внешний отступ
-border
-background
-color
-БЭМ
-FLEX
-GRID
-
-npm i serve
-
-Настроить отдачу статики
-0. ВСЁ ДОБАВИТЬ В ГИТ
-
-1. Выучить свойства и их значения
-
-2. SVG меняем на текст
-
-3. Исходя из приобретенных знаний переделать header
-на flex вёрстку
-
-4. Header сделать через display: grid
-
-5. Почитать медиавыражения
-
-6. Почитать про ARIA
-
-
-===============
-7. Positions: absolute(left, right, top, bottom), relative, fixed, sticky
-
-8. выровнять размер блоков
-
-9. сделать на Flex что бы пружинило
-
-10. поправить медиа выражения что бы не уезжал логотип
-
-*/
 body{
     font-family: 'Inter';
 }
@@ -50,32 +8,27 @@ header{
     margin-bottom: 10px;
     flex: 1 0 auto;
     margin-right: 30px;
-    
-
 }
-
-.header_section{
-    display: flex;
-    align-items: center;
-    
-    
-}
-
-.headerlogo{
+.header__logo{
     margin: auto 30px;
 }
-.headerButton{
+
+.header__section{
+    display: flex;
+    align-items: center;
+}
+
+.button__item{
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
     transition-duration: 0.5s;
 }
-.headerButton:hover{
+
+.button__item:hover{
     background: rgb(228, 228, 228);
 }
 
-
-.headerNav a{
-    
+.button__item a{
     text-decoration: none;
     color:#2b2b2b;
     text-transform: uppercase;
@@ -88,51 +41,29 @@ header{
     width: 18px;
 }
 
-.headerNavLeft{
+.header__nav{
     display: flex;
     align-items: center;
-
-
 }
 
-.headerNavLeft a{
+.header__nav a{
 
     padding: 15px 15px 15px 15px;
 }
 
-.search{
+.nav__search{
     display: flex;
     position: relative;
     border-radius: 10px;
-    transition-duration: 0.5s;
-    
-}
-.likeButton{
-    display: flex;
-    position: relative;
-    border-radius: 10px;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s;  
 }
 
-.menuButton{
-    display: flex;
-    position: relative;
-    border-radius: 10px;
-    transition-duration: 0.5s;
-}
-
-.searchBtn{
-    transition: 0.5s;
-}
-
-.search:hover > .searchText {
+.nav__search:hover > .search-text {
     width: 200px;
     padding: 0 15px;
-    
 }
 
-.searchText {
-    
+.search-text {
     border: none;
     background: none;
     outline: none;
@@ -145,17 +76,30 @@ header{
     width: 0;
 }
 
-.search:hover{
+.nav__search:hover{
     background: rgb(228, 228, 228);
     
 }
+.nav__like{
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
 
-.likeButton:hover{
+.nav__like:hover{
     background: rgb(228, 228, 228);
     padding: 20 20 20 20;
 }
 
-.menuButton:hover{
+.nav__menu{
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.nav__menu:hover{
     background: rgb(228, 228, 228);
     padding: 20 20 20 20;
 }
@@ -592,31 +536,26 @@ footer{
 }
 
 @media screen and (max-width: 1200px) {
-    .headerButton img{
+    .header__section img{
         width: 25px;
         
     }
-
-    .headerNav a{
+    .header__section a{
         font-size: 0;
-    }
-    
-    
+    } 
 }
 
 @media screen and (max-width: 996px) {
-    .headerNav a{
+    .header__section a{
         font-size: 0;
-    }
-    
+    } 
 }
 
 @media screen and (max-width: 625px) {
     
-    .headerNav a{
+    .header__section a{
         margin: auto 10px;
-    }
-    
+    }  
 }
 
 @media screen and (max-width: 550px) {
@@ -624,14 +563,8 @@ footer{
     header{
         justify-content: center;
     }
-    .headerNav{
+    .header__section{
 
         display: none;
-    
-    }
-    
+    }  
 }
-
-
-
-
