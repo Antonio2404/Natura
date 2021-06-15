@@ -37,17 +37,12 @@ header{
     padding: 5px;
 }
 
-.headerNav img{
-    width: 18px;
-}
-
 .header__nav{
     display: flex;
     align-items: center;
 }
 
 .header__nav a{
-
     padding: 15px 15px 15px 15px;
 }
 
@@ -104,9 +99,7 @@ header{
     padding: 20 20 20 20;
 }
 
-
-
-/* ---------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 main{
     flex: 1 0 auto;
@@ -117,12 +110,13 @@ main{
     margin-top: 10px;
 }
 
-.l-container{
-    flex: 1 0 auto;
+.side__panel{
     display: flex;
+    flex: 1 0 auto;
+    
 }
 
-.l-nav{
+.side__panel__container{
     display: flex;
     flex: none;
     flex-direction: column;
@@ -131,14 +125,14 @@ main{
     margin-left: 30px;
 }
 
-.all-goods{
+.container__heading{
   
     font-size: 14px;
     font-family: 'Inter';
     font-style: normal;
 }
 
-.all-fabrics{
+.container__checkbox{
     display: flex;
     flex-direction: column;
     margin-top: 25px;
@@ -147,24 +141,24 @@ main{
     font-weight: normal;
 }
 
-.all-fabrics span{
+.container__checkbox span{
     font-size: 14px;
     font-weight: bold;
     margin-bottom:15px; 
 }
 
-.l-nav label{
+.side__panel__container label{
     font-family: 'Inter';
     font-size: 14px;
     line-height: 24px;
 }
 
-.all-fabrics input {
+.container__checkbox input {
     
     appearance:initial;
 }
 
-.all-fabrics label{
+.container__checkbox label{
     padding-left:12px;
 }
 
@@ -282,15 +276,17 @@ main{
     background-image: url(../css/img/whitegrade_on.svg);
 }
 
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
-/* ---------------- */
-
-.panel_content a{
+.breadcrumb a{
     text-decoration: none;
     color:black;
-
+    font-family: 'Inter';
 }
-.pageContent_name{
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.content__info{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -301,52 +297,45 @@ main{
     font-weight: bold;
 }
 
-.pageContent_info{
+.content__info__text{
     margin-top: 10px;
     margin-right: 35px;
+    font-family: 'Inter';
 }
-.pageContent_sort{
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.content__sorting{
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
     margin-right: 40px;
 }
 
-.pageContent_button button{
+.sorting__button button{
+    font-family: 'Inter';
+    font-size: 12px;
     background-color:white;
     border-radius: 3px;
     border: 1px solid black;
-    padding: 10px 20px;
+    padding: 7px 15px 7px 15px;
     margin-right: 10px;
     transition-duration: 0.3s;
+    
 }
-.pageContent_button button:hover{
+.sorting__button button:hover{
     background-color: black;
     color: white;
 }
 
-
-
-/* ---------------- */
-
-.infoSection_container{
-    margin-top: 40px;
-    margin-right: 8px;
+.sorting__discovered{
+    font-family: 'Inter';
+    font-size: 12px;
 }
 
-.info_blockHeader{
-    font-size:24px;
-    font-weight: bold;
-}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
-.info_blockMain{
-    font-size:16px;
-    margin-top:10px;
-    margin-right: 35px;
-}
-/* ---------------- */
-
-.pageContent_panel{
+.content__img{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -356,26 +345,28 @@ main{
     padding-right: 10px;
 }
 
-.views_row{
+.content__view{
 padding-right: 15px;
 padding-bottom: 30px;
 }
-.views_row img{
+.content__view img{
     width: 330px;
 }
 
-.views_row_footer{
+.content__view__footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 5px;
+    font-family: 'Inter';
+    font-size: 16px;
 }
 
-.views_row input{
+.content__view input{
     appearance: none;
 }
 
-.views_row .check_like{
+.content__view .check__like{
     position: absolute;
     width: 31px;
     height: 31px;
@@ -385,11 +376,32 @@ padding-bottom: 30px;
     transition-duration: 0.1s;
 }
 
-.check__input:checked + .check_box_like{
+.check__input:checked + .check__box-on{
     background-image: url(../css/img/check_like_on.svg);
 }
 
-/* ---------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.delivering__container{
+    margin-top: 40px;
+    margin-right: 8px;
+}
+
+.heading__container{
+    font-size:24px;
+    font-weight: bold;
+    font-family: 'Inter';
+}
+
+.text__container{
+    font-size:16px;
+    margin-top:10px;
+    margin-right: 35px;
+    font-family: 'Inter';
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
 .hr-top-footer{
     margin: 50px 15px 30px 25px;
 	padding: 0;
@@ -398,7 +410,7 @@ padding-bottom: 30px;
 	border-top: 1px solid #333;
 }
 
-/* ---------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 footer{
     display: flex;
@@ -508,7 +520,6 @@ footer{
 
     header{
         justify-content: space-between;
-        /* justify-content: center; */
     }
     .header__section{
 

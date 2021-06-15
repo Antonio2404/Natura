@@ -11,13 +11,10 @@
 </head>
 <body>
     <script src="js/main.js"></script>
-    
         <header class="header">
             <div class="header__logo">
                 <img class="logo__img" src="img/header/logo.svg" alt>
             </div>
-
-
             <form class="header__section">
                 <div class="button__item">
                     <a href="#">
@@ -50,7 +47,6 @@
                     </a>
                 </div>
             </form>
-
             <nav class="header__nav">          
                 <form class="nav__search">
                     <input class="search-text" type="text" placeholder="Поиск...">
@@ -69,34 +65,30 @@
                     </a>
                 </form>
             </nav>
-            
         </header>
         <main>
-            <div class="l-container">
-                <div class="l-nav">
-                    <div class="all-goods">
+            <div class="side__panel">
+                <div class="side__panel__container">
+                    <div class="container__heading">
                         <span>Все товары</span>
                     </div>
-                    <div class="all-fabrics">
+                    <div class="container__checkbox">
                         <span>Вид ткани</span> 
                         <label class="check">
                             <input class="check__input" type="checkbox" name="">
                             <span class="check_box"></span>
                             Бязь
                         </label>
-                        
                         <label class="check">
                             <input class="check__input" type="checkbox" name="">
                             <span class="check_box"></span>
                             Сатин
                         </label>
-
                         <label class="check">
                             <input class="check__input" type="checkbox" name="">
                             <span class="check_box"></span>
                             Поплин
                         </label>
-
                         <label class="check">
                             <input class="check__input" type="checkbox" name="">
                             <span class="check_box"></span>
@@ -108,8 +100,7 @@
                             Перкаль
                         </label>
                     </div>
-
-                    <div class="all-fabrics">
+                    <div class="container__checkbox">
                         <span>Размер</span>
                         <label class="check option">
                             <input class="check__input" type="checkbox" name="">
@@ -128,8 +119,7 @@
                             <span class="check_box"></span>Семейный
                         </label>
                     </div>
-
-                    <div class="all-fabrics">
+                    <div class="container__checkbox">
                         <span>Дизайн</span>                    
                         <label class="check option">
                             <input class="check__input" type="checkbox" name="">
@@ -148,8 +138,7 @@
                             <span class="check_box"></span>Animal
                         </label>
                     </div>
-
-                    <div class="all-fabrics">
+                    <div class="container__checkbox">
                         <span>Тип</span>                    
                         <label class="check option">
                             <input class="check__input" type="checkbox" name="">
@@ -167,9 +156,8 @@
                             <input class="check__input" type="checkbox" name="">
                             <span class="check_box"></span>Комплект наволочек
                         </label>
-                    </div>
-                    
-                    <div class="all-fabrics">
+                    </div> 
+                    <div class="container__checkbox">
                         <span>Цвет</span>                    
                         <label class="check__color">
                             <input class="check__input" type="checkbox" name="">
@@ -194,8 +182,7 @@
                     </div>
                 </div>
                 <div>
-                    <section class="panel_breadcrumb">
-                        <div class="panel_content">
+                    <section class="panel__breadcrumb">
                             <div class="breadcrumb">
                                 <span class="inline odd first"><a href="#">Главная</a></span>
                                 <span class="delimiter"> / </span>
@@ -204,208 +191,198 @@
                                 <span class="inline even"><a href="#">Спальня</a></span>
                                 <span class="delimiter"> / </span>
                                 <span class="inline even"><a href="#">Послельное белье</a></span>
-                            </div>
-                        </div>
+                            </div>  
                     </section>
-
-                    <section class="panel_pageContent">
-                        <div class="pageContent_name">
+                    <section class="content">
+                        <div class="content__info">
                             <div>
                                 <span class="inline odd first">Постельное бельё</span>
                             </div>
                             <div>
-                                
                                 <span><img src="img/header/bedroom.svg" alt style="width: 32px;"></span>
                             </div>
                         </div>
-                        <div class="pageContent_info">
+                        <div class="content__info__text">
                             <span>
                                 Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать.
                             </span>
                         </div>
-                        <div class="pageContent_sort">
-                            <div class="pageContent_button">
+                        <div class="content__sorting">
+                            <div class="sorting__button">
                                 <button>По популярности</button>
                                 <button>Материал</button>
                                 <button>Размер</button>
 
                             </div>
-                            <div class="pageContent_number">
-                                <span>1120</span>
+                            <div class="sorting__discovered">
+                                <span>1 120</span>
                                 <span> товаров</span>
                             </div>
                         </div>
-                        <div class="pageContent_panel">
-                            <div class="views_row">
+                        <div class="content__img">
+                            <div class="content__view">
                                 <img src="img\content\1.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div>
                             </div>
-                            <div class="views_row">
+                            <div class="content__view">
                                 <img src="img\content\2.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div>
                             </div>
-                            <div class="views_row">
+                            <div class="content__view">
                                 <img src="img\content\3.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div>
                             </div>
-                            <div class="views_row">
+                            <div class="content__view">
                                 <img src="img\content\4.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div>
                             </div>
-                            <div class="views_row">
+                            <div class="content__view">
                                 <img src="img\content\5.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div></div>
-                            <div class="views_row">
+                            <div class="content__view">
                                 <img src="img\content\6.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div>
                             </div>
-                            <div class="views_row">
+                            <div class="content__view">
                                 <img src="img\content\7.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div>
                             </div>
-                            <div class="views_row">
+                            <div class="content__view">
                                 <img src="img\content\8.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div>
                             </div>
-                            <div class="views_row">
+                            <div class="content__view">
                                 <img src="img\content\9.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div>
                             </div>
-                            <div class="views_row">
+                            <div class="content__view">
                                 <img src="img\content\10.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div>
                             </div>
-                            <div class="views_row">
+                            <div class="content__view">
                                 <img src="img\content\11.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div>
                             </div>
-                            <div class="views_row">
+                            <div class="content__view">
                                 <img src="img\content\12.jpg" alt="">
-                                <label class="check_like">
+                                <label class="check__like">
                                     <input class="check__input" type="checkbox" name="">
-                                    <span class="check_box_like"></span>
+                                    <span class="check__box-on"></span>
                                 </label>
-                                <div class="views_row_footer">
+                                <div class="content__view__footer">
                                     <span>КПБ "Мальва"</span>
                                     <span>Рис. 5676</span>
                                 </div>
                             </div>
                         </div>
-
                     </section>
-
-                    <section class="infoSection">
-                        <div class="infoSection_container">
-                            <div class="info_blockHeader">
+                    <section class="delivering">
+                        <div class="delivering__container">
+                            <div class="heading__container">
                                 <span>CEO-заголовок</span>
                             </div>
-                            <div class="info_blockMain">
+                            <div class="text__container">
                                 <span>Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать.</span>
                             </div>
                         </div>
-                        <div class="infoSection_container">
-                            <div class="info_blockHeader">
+                        <div class="delivering__container">
+                            <div class="heading__container">
                                 <span>Доставка товара</span>
                             </div>
-                            <div class="info_blockMain">
+                            <div class="text__container">
                                 <span>Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции  вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать.</span>
                             </div>
                         </div>
-                        <div class="infoSection_container">
-                            <div class="info_blockHeader">
+                        <div class="delivering__container">
+                            <div class="heading__container">
                                 <span>Оплата товара</span>
                             </div>
-                            <div class="info_blockMain">
+                            <div class="text__container">
                                 <span>Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции  вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать.</span>
                             </div>
                         </div>
-
                     </section>
                 </div>
-
-            </div>
-            
+            </div>   
         </main>
-
         <hr class="hr-top-footer">
-
         <footer class="footer">
             <div class="footer__top">
                 <div class="footer__logo">
@@ -472,7 +449,6 @@
                             <a href="">Условия покупки</a>
                         </li>
                     </ul>
-                    
                 </div>
                 <div class="footer__top__item">
                     <div class="footer__top_headline">
@@ -507,7 +483,6 @@
                             <a href="#">Коллекции</a>
                         </li>
                     </ul>
-                    
                 </div>
                 <div class="footer__top__item">
                     <div class="footer__top_headline">
@@ -527,9 +502,7 @@
                     </div>
                 </div>
             </div>
-
             <hr class="hr-bottom-footer">
-
             <div class="footer__bottom__item">
                 <div>
                     <span>«Natura» — Торговая марка компании. Все права защищены</span>
