@@ -313,19 +313,18 @@ main{
 }
 
 .sorting__button button{
+    
     font-family: 'Inter';
     font-size: 12px;
     background-color:white;
     border-radius: 3px;
     border: 1px solid black;
     padding: 7px 15px 7px 15px;
-    margin-right: 10px;
-    transition-duration: 0.3s;
-    
+    margin-right: 10px;  
 }
 .sorting__button button:hover{
     background-color: black;
-    color: white;
+    color: white;    
 }
 
 .sorting__discovered{
@@ -366,6 +365,23 @@ padding-bottom: 30px;
     appearance: none;
 }
 
+.naming{
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.naming:hover{
+    font-family: 'Inter';
+    font-size: 16px;
+    color:#E89F38 ;
+}
+
+.article{
+    font-family: 'Inter';
+    font-size: 14px;
+    color: #707070;
+}
+
 .content__view .check__like{
     position: absolute;
     width: 31px;
@@ -379,6 +395,69 @@ padding-bottom: 30px;
 .check__input:checked + .check__box-on{
     background-image: url(../css/img/check_like_on.svg);
 }
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.paging{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 35px;
+}
+
+#paging__block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.paging__block a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-size: 14px;
+    color: black;
+    margin-right: 10px;
+}
+
+.block__direction img{
+    transform: translate( 0px,3px);
+}
+
+.block__direction{
+    border: 1px solid black;
+    padding: 9px 13px 9px 13px;
+}
+
+.block__numpage{
+    border: 1px solid black;
+    padding: 9px 13px 9px 13px;
+}
+
+.block__direction:hover{
+    background-color: black;
+    color: white; 
+}
+
+.block__numpage:hover{
+    background-color: black;
+    color: white; 
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.unhide__button button{
+    font-family: 'Inter';
+    font-size: 14px;
+    background-color:white;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 9px 15px 9px 15px;
+    margin-right: 10px;
+}
+
+.unhide__button button:hover{
+    background-color: black;
+    color: white;    
+}
+
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
