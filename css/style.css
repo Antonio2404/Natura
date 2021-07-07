@@ -417,9 +417,7 @@ padding-bottom: 30px;
     margin-right: 10px;
 }
 
-.block__direction img{
-    transform: translate( 0px,3px);
-}
+
 
 .block__direction{
     border: 1px solid black;
@@ -433,7 +431,7 @@ padding-bottom: 30px;
 
 .block__direction:hover{
     background-color: black;
-    color: white; 
+    color: white;
 }
 
 .block__numpage:hover{
