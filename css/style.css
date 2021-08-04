@@ -126,10 +126,10 @@ main{
 }
 
 .container__heading{
-  
     font-size: 14px;
-    font-family: 'Inter';
+    font-family:'Inter';
     font-style: normal;
+    color: #2B2B2B;
 }
 
 .container__checkbox{
@@ -149,6 +149,7 @@ main{
 
 .side__panel__container label{
     font-family: 'Inter';
+    color:#494949;
     font-size: 14px;
     line-height: 24px;
 }
@@ -277,13 +278,31 @@ main{
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.breadcrumb li{
+    list-style: none;
+    display: inline;
+}
 
 .breadcrumb a{
     text-decoration: none;
-    color:black;
+    color:#2B2B2B;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;  
+}
+
+
+.breadcrumb > li + li:before{
+    color:#494949;
+    content: "/ ";
+    font-size: 12px;  
     font-family: 'Inter';
 }
 
+.breadcrumb + li:active{
+    color: coral;
+}
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .content__info{
@@ -565,6 +584,9 @@ footer{
     font-family: 'Inter';
     margin: 30px 15px 0px 25px;
 }
+.footer__bottom__item_social-network a{
+    text-decoration: none;
+} 
 .footer__bottom__item_social-network svg{
     padding: 0px 15px;
 } 
