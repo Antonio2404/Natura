@@ -565,9 +565,21 @@ footer{
     font-family: 'Inter';
     margin: 30px 15px 0px 25px;
 }
-.footer__bottom__item_social-network a{
-    margin: auto 15px;
+.footer__bottom__item_social-network svg{
+    padding: 0px 15px;
+} 
 
+.icon__vk{
+    width: 28px;
+    height: 15px;
+}
+.icon__insta{
+    width: 18px;
+    height: 18.04px;
+}
+.icon__ok{
+    width: 13.35px;
+    height: 20.07px;
 }
 
 @media screen and (max-width: 1200px) {
